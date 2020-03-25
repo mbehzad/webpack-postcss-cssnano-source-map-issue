@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:webpack": "webpack",
-    "build:postcss": "postcss main.css -o ./dist/css/output-cli.css",
-    "test:source-map-explorer": "source-map-explorer ./dist/css/*.css",
+    "build": "webpack",
+    "source-map-explorer": "source-map-explorer ./dist/css/*.css",
     "decode": "node index.js"
   },
   "keywords": [],
@@ -22,7 +21,7 @@
     "postcss-preset-env": "6.7.0",
     "sass-loader": "8.0.2",
     "source-map": "0.7.3",
-    "source-map-explorer": "2.4.0",
+    "source-map-explorer": "^2.4.1",
     "sourcemap-codec": "1.4.8",
     "sourcemap-validator": "2.1.0",
     "webpack": "^4.42.0",

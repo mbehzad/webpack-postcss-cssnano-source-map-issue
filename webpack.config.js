@@ -9,27 +9,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              esModule: true,
-            },
-          },
+          MiniCssExtractPlugin.loader,
           {
             loader: require.resolve("css-loader"),
             options: {
               sourceMap: true,
-            }
-          },
-          {
-            loader: require.resolve("postcss-loader"),
-            options: {
-              sourceMap: true,
-              ident: "postcss",
-              plugins: () => [
-                require("postcss-preset-env")({}),
-                require("cssnano")({preset: ["default"]}),
-              ],
             }
           },
         ]
@@ -39,7 +23,7 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/output-wp.css"
+      filename: "css/output.css"
     })
   ],
 }
