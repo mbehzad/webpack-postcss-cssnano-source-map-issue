@@ -21,10 +21,10 @@
     "postcss-preset-env": "6.7.0",
     "sass-loader": "8.0.2",
     "source-map": "0.7.3",
-    "source-map-explorer": "^2.4.1",
+    "source-map-explorer": "2.4.1",
     "sourcemap-codec": "1.4.8",
     "sourcemap-validator": "2.1.0",
-    "webpack": "^4.42.0",
+    "webpack": "4.42.0",
     "webpack-cli": "3.3.11"
   }
 }
